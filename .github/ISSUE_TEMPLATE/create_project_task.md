@@ -1,5 +1,5 @@
 ---
-name: ":memo: Create a project task"
+name: "📝 Create a project task"
 about: A new project task to be added to a GitHub Project board
 title: '[TASK]'
 labels: 
