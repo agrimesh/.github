@@ -29,19 +29,17 @@ This is an agile process of project management. The team tasks (cards) are modul
 
 The executive team is composed of the team lead and its deputies and helpers. The executive team is accountable and has the responsibility of ensuring that the all the teams work efficiently and effectively as a whole to reach a common goal.
 
-If any one has an enquiry, contact one of the helpers (if available) of your respective team. The contacted helper will then respond, but if they cannot respond, the enquiry will be escalated to the deputy of your respective team. If the deputy cannot respond, the enquiry will then be escalated to the team lead or one of the managers for a final response.
+If any one has an enquiry, contact the deputy (if available) of your respective team. The contacted deputy will then respond, but if they cannot respond the enquiry will be escalated to the team lead of your respective team. If the team lead cannot respond, the enquiry will then be escalated to the project manager for a final response.
 
 ### Project Manager
 
 - [@simply-alliv](https://github.com/simply-alliv)
 
-### Team Lead
+### Team Leads
 
 - [@Chongz-28](https://github.com/Chongz-28)
 
-None
-
-### Helpers
+### Team Deputies
 
 None
 
