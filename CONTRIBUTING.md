@@ -126,7 +126,7 @@ After your pull request is merged, you can safely delete your branch and pull th
 
 ## <a name="commit-message-guidelines"></a> Commit Message Guidelines
 
-*This specification is inspired by and supersedes the [AngularJS commit message format][https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#].*
+*This specification is inspired by and supersedes the [AngularJS commit message format](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#).*
 
 We have very precise rules over how our Git commit messages must be formatted.
 This format leads to **easier to read commit history**.
