@@ -126,30 +126,81 @@ After your pull request is merged, you can safely delete your branch and pull th
 
 ## <a name="commit-message-guidelines"></a> Commit Message Guidelines
 
-Each commit message consists of a header, a body and a footer. The header has a special format that includes a type, a scope and a subject as described below:
+*This specification is inspired by and supersedes the [AngularJS commit message format][https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#].*
+
+We have very precise rules over how our Git commit messages must be formatted.
+This format leads to **easier to read commit history**.
+
+Each commit message consists of a **header**, a **body**, and a **footer**.
+
 
 ```
-<type>(<scope>): <subject>
+<header>
 <BLANK LINE>
 <body>
 <BLANK LINE>
 <footer>
 ```
 
-The header is mandatory and the scope of the header is optional.
+The `header` is mandatory and must conform to the [Commit Message Header](#commit-header) format.
 
-Any line of the commit message cannot be longer than 100 characters! This allows the message to be easier to read on GitHub as well as in various git tools.
+The `body` is mandatory for all commits except for those of scope "docs".
+When the body is required it must be at least 20 characters long.
 
-The footer should contain a closing reference to an issue if any.
+The `footer` is optional.
+
+Any line of the commit message cannot be longer than 100 characters.
+
+
+#### <a href="commit-header"></a>Commit Message Header
+
+```
+<type>(<scope>): <short summary>
+  │       │             │
+  │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
+  │       │
+  │       └─⫸ Commit Scope: mobile-app|web-app|amesh-cli|accountdb|status|profile|privacy
+  │
+  └─⫸ Commit Type: build|ci|docs|feat|fix|perf|refactor|test
+```
+
+The `<type>` and `<summary>` fields are mandatory, the `(<scope>)` field is optional.
+
+
+##### Type
+
+Must be one of the following:
+
+* **build**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm, go)
+* **ci**: Changes to our CI configuration files and scripts (example scopes: Circle, BrowserStack, SauceLabs)
+* **docs**: Documentation only changes
+* **feat**: A new feature
+* **fix**: A bug fix
+* **perf**: A code change that improves performance
+* **refactor**: A code change that neither fixes a bug nor adds a feature
+* **test**: Adding missing tests or correcting existing tests
+
+##### Scope
+The scope should be the name of the service or application affected (as perceived by the person reading the changelog generated from commit messages).
+
+The following is the list of some supported scopes:
+
+* `mobile-app`
+* `web-app`
+* `amesh-cli`
+* `accountdb` # Service name
+* `status` # Service name
+* `profile` # Service name
+* `privacy` # Service name
 
 ### Examples:
 
 ```
-docs(changelog): update changelog to beta.5
+docs(mobile-app): update changelog to beta.5
 ```
 
 ```
-fix(release): need to depend on latest rxjs and zone.js
+fix(status): need to depend on latest amesh cli
 ```
 
 For more examples and information, see [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#:~:text=Commits%20MUST%20be%20prefixed%20with,to%20your%20application%20or%20library.)
